@@ -14,11 +14,16 @@
             },
             {
                 "name": "CSS",
-                "notes": "SASS, LESS",
+                "additionalInfo": "SASS, LESS",
                 "level": "4.5"
             }
         ],
-        "personal": []
+        "personal": [
+            {
+                "name": "Teamwork",
+                "level": "5"
+            }
+        ]
     },
     "work": [
         {
