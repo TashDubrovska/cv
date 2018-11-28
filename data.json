@@ -1,0 +1,31 @@
+{
+    "name": "Nataliya Dubrovska",
+    "whoiam": "Fullstack web developer, Accessibility enthusiast",
+    "email": "n.dubrovska89@gmail.com",
+    "skills": {
+        "technical": [
+            {
+                "name": "Javascript",
+                "level": "4"
+            },
+            {
+                "name": "Node.js",
+                "level": "4"
+            },
+            {
+                "name": "CSS",
+                "notes": "SASS, LESS",
+                "level": "4.5"
+            }
+        ],
+        "personal": []
+    },
+    "work": [
+        {
+            "company": "Marks & Spencer",
+            "dates": "2016-2018",
+            "role": "Senior Software Developer",
+            "description": "Making cool stuff!"
+        }
+    ]
+}
