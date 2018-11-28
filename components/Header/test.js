@@ -7,7 +7,7 @@ describe('Header', () => {
 
     let header;
 
-    beforeEach(() => {
+    beforeAll(() => {
         header = shallow(<Header name={data.name} whoiam={data.whoiam} email={data.email} />)
     });
 
