@@ -4,7 +4,8 @@
   "description": "CV shenenigans!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config=./jest.js --coverage",
+    "bundle": "parcel rm -rf assets && parcel build ./App.js --out-dir ./assets"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,31 @@
   "bugs": {
     "url": "https://github.com/TashDubrovska/cv/issues"
   },
-  "homepage": "https://github.com/TashDubrovska/cv#readme"
+  "homepage": "https://github.com/TashDubrovska/cv#readme",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "browserslist": [
+    "> 2%",
+    "last 2 version",
+    "not dead"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
 }
