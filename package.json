@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --config=./jest.js --coverage",
-    "bundle": "rm -rf assets && parcel build ./index.js --out-dir ./assets"
+    "bundle": "rm -rf assets && parcel build ./index.js ./style.scss --out-dir ./assets"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,11 @@
       "react"
     ]
   },
+  "sass": {
+    "includePaths": [
+      "node_modules"
+    ]
+  },
   "browserslist": [
     "> 2%",
     "last 2 version",
@@ -39,7 +44,8 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "jest": "^23.6.0",
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.1"
   },
   "dependencies": {
     "components": "^0.1.0",
