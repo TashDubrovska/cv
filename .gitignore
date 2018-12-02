@@ -62,3 +62,6 @@ typings/
 
 # OS
 .DS_STORE
+
+# Parcel cache
+.cache
