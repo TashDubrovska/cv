@@ -15,9 +15,13 @@ h2 {
     color: #FFF;
     font-weight: 400;
     font-size: 1.3rem;
-    padding: $section-padding;
+    padding: $base-spacing;
     text-align: center;
     text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
 }
 
 .hide-a11y {

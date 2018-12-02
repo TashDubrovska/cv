@@ -3,6 +3,8 @@ import { shallow } from 'enzyme';
 import Header from '.';
 import data from '../../data.json';
 
+const baseClassName = 'header';
+
 describe('Header', () => {
 
     let header;
@@ -12,15 +14,18 @@ describe('Header', () => {
     });
 
     test('should render name', () => {
-        expect(header.find('h1').text()).toEqual(data.name);
+        expect(header.find(`h1.${baseClassName}__name`).text()).toEqual(data.name);
     });
 
     test('should render whoiam', () => {
-        expect(header.find('.whoiam').text()).toEqual(data.whoiam);
+        expect(header.find(`.${baseClassName}__whoiam`).text()).toEqual(data.whoiam);
     });
 
-    test('should render email', () => {
-        expect(header.find('.email').text()).toEqual(data.email);
+    test('should render email link', () => {
+        const emailElement = header.find(`.${baseClassName}__resources__link`);
+
+        expect(emailElement.type()).toEqual('a');
+        expect(emailElement.prop('href')).toContain(data.email);
     });
 
 });
