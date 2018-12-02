@@ -1,1 +1,21 @@
 @import "~normalize.css/normalize";
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+h2 {
+    background: $highlight;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: $section-padding;
+    text-align: center;
+    text-transform: uppercase;
+}
