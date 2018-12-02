@@ -19,3 +19,8 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
+
+.hide-a11y {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+}
