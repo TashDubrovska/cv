@@ -9,11 +9,13 @@ const Header = ({ name, surname, whoiam, aboutMe , email }) => (
             {name}
             <span className={`${baseClassName}__name__highlight`}>{surname}</span>
         </h1>
+        
         <h2 className='hide-a11y'>Who I am</h2>
         <p className={`${baseClassName}__whoiam`}>{whoiam}</p>
+
         <h2 className='hide-a11y'>About me</h2>
-        {aboutMe.map(paragraph => (
-            <p className={`${baseClassName}__about-me`}>{paragraph}</p>
+        {aboutMe.map((paragraph, index) => (
+            <p key={index} className={`${baseClassName}__about-me`}>{paragraph}</p>
         ))}
     </section>
 );

@@ -10,22 +10,27 @@ describe('Header', () => {
     let header;
 
     beforeAll(() => {
-        header = shallow(<Header name={data.name} whoiam={data.whoiam} email={data.email} />)
+        header = shallow(<Header name={data.name} surname={data.surname} whoiam={data.whoiam} aboutMe={data.aboutMe} email={data.email} />)
     });
 
-    test('should render name', () => {
-        expect(header.find(`h1.${baseClassName}__name`).text()).toEqual(data.name);
+    test('should render full name', () => {
+        const nameElementText = header.find(`h1.${baseClassName}__name`).text();
+
+        expect(nameElementText).toContain(data.name);
+        expect(nameElementText).toContain(data.surname);
     });
 
     test('should render whoiam', () => {
         expect(header.find(`.${baseClassName}__whoiam`).text()).toEqual(data.whoiam);
     });
 
-    test('should render email link', () => {
-        const emailElement = header.find(`.${baseClassName}__resources__link`);
+    test('should render about me pagagraphs', () => {
+        const aboutMeElements = header.find(`.${baseClassName}__about-me`);
 
-        expect(emailElement.type()).toEqual('a');
-        expect(emailElement.prop('href')).toContain(data.email);
+        expect(aboutMeElements).toHaveLength(data.aboutMe.length);
+        aboutMeElements.forEach((element, index) => {
+            expect(element.text()).toEqual(data.aboutMe[index]);
+        });
     });
 
 });
