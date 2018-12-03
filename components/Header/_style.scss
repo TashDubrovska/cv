@@ -1,55 +1,30 @@
 .header {
-    background: url(https://i.imgur.com/7nTg535.png);
-    border-top: 60px solid $highlight;
-    padding: $base-spacing*3 $base-spacing $base-spacing*6;
-    text-align: center;
+    margin-bottom: $base-spacing*9;
 
     &__name {
-        font-size: 2.85rem;
-        font-weight: 200;
-        margin: 0 0 $base-spacing*4;
+        font-size: 2.8rem;
+        font-weight: 400;
+        margin: 0 0 $base-spacing;
         text-transform: uppercase;
         word-spacing: 1000px;
+
+        &__highlight {
+            color: $text-highlight;
+            display: block;
+            font-weight: 700;
+        }
     }
 
     &__whoiam {
-        color: $highlight;
-        font-size: 0.7rem;
-        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: $base-spacing*5;
         text-transform: uppercase;
     }
 
-    &__resources {
-        list-style: none;
-        margin: 0 0 $base-spacing*4;
-        position: relative;
-        text-align: center;
-
-        &:before {
-            content: "";
-            border-bottom: 1px dashed $highlight;
-            display: block;
-            left: 5%;
-            position: absolute;
-            top: 50%;
-            width: 90%;
-            z-index: 0;
-        }
-
-        &__link {
-            background-color: $highlight;
-            border-radius: 50%;
-            display: flex;
-            height: 45px;
-            margin: 0 auto;
-            position: relative;
-            width: 45px;
-            z-index: 1;
-
-            & svg {
-                width: 60%;
-                margin: 0 auto;
-            }
-        }
+    &__about-me {
+        line-height: 1.5;
+        margin: 0 0 $base-spacing*2;
+        text-align: justify;
     }
 }

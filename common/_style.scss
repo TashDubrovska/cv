@@ -1,28 +1,33 @@
 @import "~normalize.css/normalize";
 
 body {
+    background-color: #181200;
+    color: $text-color;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
 main {
+    background-color: $main-background;
     margin: 0 auto;
     max-width: 1024px;
+    padding: $base-spacing*5 $base-spacing*2;
 }
 
 h2 {
-    background: $highlight;
-    color: #FFF;
-    font-weight: 200;
-    font-size: 1.3rem;
+    color: $text-highlight;
+    font-weight: 700;
+    font-size: 2.3rem;
     margin-top: 0;
-    padding: $base-spacing;
-    text-align: center;
     text-transform: uppercase;
 }
 
 ul {
     padding: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .hide-a11y {

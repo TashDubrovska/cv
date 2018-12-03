@@ -6,7 +6,7 @@ import WorkExperience from './WorkExperience';
 
 const App =  ({ data }) => (
     <div>
-        <Header name={data.name} whoiam={data.whoiam} email={data.email} />
+        <Header name={data.name} surname={data.surname} whoiam={data.whoiam} aboutMe={data.aboutMe} email={data.email} />
         <Skills technical={data.skills.technical} personal={data.skills.personal} />
         <WorkExperience roles={data.work} />
     </div>

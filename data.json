@@ -1,6 +1,10 @@
 {
-    "name": "Nataliya Dubrovska",
-    "whoiam": "Fullstack web developer, Accessibility enthusiast",
+    "name": "Nataliya",
+    "surname": "Dubrovska",
+    "whoiam": "Web developer, Accessibility enthusiast",
+    "aboutMe": [
+        "I am a hard working, pragmatic and highly motivated engineer with a keen interest in technology and all things web. One of my biggest passions is Accessibility as it strongly relates to my personal belief that the internet should be an incredible space for everyone."
+    ],
     "email": "n.dubrovska89@gmail.com",
     "skills": {
         "technical": [
