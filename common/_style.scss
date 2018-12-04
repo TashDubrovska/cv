@@ -1,10 +1,14 @@
 @import "~normalize.css/normalize";
 
 body {
-    background-color: #181200;
+    background-color: $body-background;
     color: $text-color;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
+
+    @media screen and (min-width: $tablet-landscape) {
+        font-size: 16px;
+    }
 }
 
 main {
@@ -12,6 +16,16 @@ main {
     margin: 0 auto;
     max-width: 1024px;
     padding: $base-spacing*5 $base-spacing*2;
+
+    @media screen and (min-width: $mobile-landscape) {
+        padding-left: $base-spacing*4;
+        padding-right: $base-spacing*4;
+    }
+
+    @media screen and (min-width: $tablet-landscape) {
+        padding-left: $base-spacing*8;
+        padding-right: $base-spacing*8;
+    }
 }
 
 h2 {
@@ -20,6 +34,10 @@ h2 {
     font-size: 2.3rem;
     margin-top: 0;
     text-transform: uppercase;
+
+    @media screen and (min-width: $mobile-landscape) {
+        font-size: 3rem;
+    }
 }
 
 ul {
