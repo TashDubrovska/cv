@@ -12,7 +12,9 @@
         }
 
         @media screen and (min-width: $tablet-landscape) {
+            border-left: $base-spacing*4 solid $highlighter-background;
             font-size: 7rem;
+            padding-left: $base-spacing*5;
         }
 
         &__highlight {
