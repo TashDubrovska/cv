@@ -12,22 +12,53 @@
     "technical": [
       {
         "name": "Javascript",
-        "level": "4"
+        "additionalInfo": "ES6 onwards, React, JQuery, Node.js, Express, Memoizee, Opossum",
+        "level": "4.2"
       },
       {
-        "name": "Node.js",
-        "level": "4"
+        "name": "Testing",
+        "additionalInfo": "Mocha, Chai, JSDOM, Jest, Enzyme, Webdriver.io, Eslint, SASS lint",
+        "level": "4.5"
+      },
+      {
+        "name": "Markup and templating",
+        "additionalInfo": "HTML5, Handlebars, EJS",
+        "level": "4.8"
       },
       {
         "name": "CSS",
-        "additionalInfo": "SASS, LESS",
+        "additionalInfo": "CSS3, SASS, LESS, BEM",
         "level": "4.5"
+      },
+      {
+        "name": "Asset bundling",
+        "additionalInfo": "Webpack, Parcel, Babel",
+        "level": "4.5"
+      },
+      {
+        "name": "Accessibility",
+        "additionalInfo": "WCAG 2.1, WAI-Aria",
+        "level": "4.8"
+      },
+      {
+        "name": "Continious integration / deployment",
+        "additionalInfo": "Concourse, Pivotal, Bluemix, Azure, LogEntries",
+        "level": "4"
       }
     ],
     "personal": [
       {
         "name": "Teamwork",
         "level": "5"
+      },
+      {
+        "name": "Agile",
+        "additionalInfo": "Scrum, Kanban, Jira, Trello",
+        "level": "4.9"
+      },
+      {
+        "name": "Leadership",
+        "level": "4.3"
       }
     ]
   },
