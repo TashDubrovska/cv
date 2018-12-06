@@ -42,7 +42,7 @@
       },
       {
         "name": "Continious integration / deployment",
-        "additionalInfo": "Concourse, Pivotal, Bluemix, Azure, LogEntries",
+        "additionalInfo": "Concourse, Pivotal, Bluemix, Azure, Docker, LogEntries",
         "level": "4"
       }
     ],
@@ -54,7 +54,7 @@
       {
         "name": "Agile",
         "additionalInfo": "Scrum, Kanban, Jira, Trello",
-        "level": "4.9"
+        "level": "4.6"
       },
       {
         "name": "Leadership",
