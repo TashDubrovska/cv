@@ -28,6 +28,14 @@ main {
     }
 }
 
+section {
+    margin-bottom: $base-spacing*8;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
 h2 {
     color: $text-highlight;
     font-weight: 700;
@@ -41,6 +49,7 @@ h2 {
 }
 
 ul {
+    list-style: none;
     padding: 0;
 }
 
