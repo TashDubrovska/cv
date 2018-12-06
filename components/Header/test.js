@@ -28,7 +28,7 @@ describe('Header', () => {
   });
 
   test('should render mailto link', () => {
-    expect(header.find(`.${baseClassName}__email`).prop('href')).toContain(data.email);
+    expect(header.find('.email').prop('href')).toContain(data.email);
   });
 
   test('should render whoiam', () => {
