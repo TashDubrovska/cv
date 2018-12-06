@@ -1,42 +1,42 @@
 {
-    "name": "Nataliya",
-    "surname": "Dubrovska",
-    "whoiam": "Web developer, Accessibility enthusiast",
-    "aboutMe": [
-        "I am a hard working, pragmatic and highly motivated engineer with a keen interest in technology and all things web. One of my biggest passions is Accessibility as it strongly relates to my personal belief that the internet should be an incredible space for everyone.",
-        "Collaboration for me is one of the most important aspects of working as a part of a team or organization. I am a fast learner who enjoys challenging herself even if the challenge in question lays outside of my usual area of expertise. I love mentoring, deliver internal talks on both technical topics and soft skills as well as participate in joint projects or hackathons with my colleagues from various teams.",
-        "Outside of work, I am a cat lover, board and computer games geek who knows way too much about Star Wars."
+  "name": "Nataliya",
+  "surname": "Dubrovska",
+  "whoiam": "Web developer, Accessibility enthusiast",
+  "aboutMe": [
+    "I am a hard working, pragmatic and highly motivated engineer with a keen interest in technology and all things web. One of my biggest passions is Accessibility as it strongly relates to my personal belief that the internet should be an incredible space for everyone.",
+    "Collaboration for me is one of the most important aspects of working as a part of a team or organization. I am a fast learner who enjoys challenging herself even if the challenge in question lays outside of my usual area of expertise. I love mentoring, deliver internal talks on both technical topics and soft skills as well as participate in joint projects or hackathons with my colleagues from various teams.",
+    "Outside of work, I am a cat lover, board and computer games geek who knows way too much about Star Wars."
+  ],
+  "email": "n.dubrovska89@gmail.com",
+  "skills": {
+    "technical": [
+      {
+        "name": "Javascript",
+        "level": "4"
+      },
+      {
+        "name": "Node.js",
+        "level": "4"
+      },
+      {
+        "name": "CSS",
+        "additionalInfo": "SASS, LESS",
+        "level": "4.5"
+      }
     ],
-    "email": "n.dubrovska89@gmail.com",
-    "skills": {
-        "technical": [
-            {
-                "name": "Javascript",
-                "level": "4"
-            },
-            {
-                "name": "Node.js",
-                "level": "4"
-            },
-            {
-                "name": "CSS",
-                "additionalInfo": "SASS, LESS",
-                "level": "4.5"
-            }
-        ],
-        "personal": [
-            {
-                "name": "Teamwork",
-                "level": "5"
-            }
-        ]
-    },
-    "work": [
-        {
-            "company": "Marks & Spencer",
-            "dates": "2016-2018",
-            "role": "Senior Software Developer",
-            "description": "Making cool stuff!"
-        }
+    "personal": [
+      {
+        "name": "Teamwork",
+        "level": "5"
+      }
     ]
+  },
+  "work": [
+    {
+      "company": "Marks & Spencer",
+      "dates": "2016-2018",
+      "role": "Senior Software Developer",
+      "description": "Making cool stuff!"
+    }
+  ]
 }

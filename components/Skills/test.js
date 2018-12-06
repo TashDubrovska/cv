@@ -4,17 +4,17 @@ import Skills from '.';
 import data from '../../data.json';
 
 describe('Skills', () => {
-    let skills;
+  let skills;
 
-    beforeAll(() => {
-        skills = shallow(<Skills technical={data.skills.technical} personal={data.skills.personal} />);
-    });
+  beforeAll(() => {
+    skills = shallow(<Skills technical={data.skills.technical} personal={data.skills.personal} />);
+  });
 
-    test('should render correct number of technical skills', () => {
-        expect(skills.find('.technical Skill')).toHaveLength(data.skills.technical.length)
-    });
+  test('should render correct number of technical skills', () => {
+    expect(skills.find('.technical Skill')).toHaveLength(data.skills.technical.length);
+  });
 
-    test('should render correct number of personal skills', () => {
-        expect(skills.find('.personal Skill')).toHaveLength(data.skills.personal.length)
-    });
+  test('should render correct number of personal skills', () => {
+    expect(skills.find('.personal Skill')).toHaveLength(data.skills.personal.length);
+  });
 });

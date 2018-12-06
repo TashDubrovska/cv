@@ -4,16 +4,22 @@ import Header from './Header';
 import Skills from './Skills';
 import WorkExperience from './WorkExperience';
 
-const App =  ({ data }) => (
-    <div>
-        <Header name={data.name} surname={data.surname} whoiam={data.whoiam} aboutMe={data.aboutMe} email={data.email} />
-        <Skills technical={data.skills.technical} personal={data.skills.personal} />
-        <WorkExperience roles={data.work} />
-    </div>
+const App = ({ data }) => (
+  <div>
+    <Header
+      name={data.name}
+      surname={data.surname}
+      whoiam={data.whoiam}
+      aboutMe={data.aboutMe}
+      email={data.email}
+    />
+    <Skills technical={data.skills.technical} personal={data.skills.personal} />
+    <WorkExperience roles={data.work} />
+  </div>
 );
 
 App.propTypes = {
-    data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 };
 
 export default App;

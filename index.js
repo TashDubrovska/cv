@@ -6,6 +6,6 @@ import App from './components/App';
 import data from './data.json';
 
 render(
-    <App data={data} />,
-    document.getElementById('cv')
+  <App data={data} />,
+  document.getElementById('cv'),
 );

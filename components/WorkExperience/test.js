@@ -4,14 +4,13 @@ import WorkExperience from '.';
 import data from '../../data.json';
 
 describe('WorkExperience', () => {
-    let workExperience;
+  let workExperience;
 
-    beforeAll(() => {
-        workExperience = shallow(<WorkExperience roles={data.work} />)
-    });
+  beforeAll(() => {
+    workExperience = shallow(<WorkExperience roles={data.work} />);
+  });
 
-    test('should render correct number of roles', () => {
-        console.log(workExperience.html());
-        expect(workExperience.find('JobRole')).toHaveLength(data.work.length);
-    });
+  test('should render correct number of roles', () => {
+    expect(workExperience.find('JobRole')).toHaveLength(data.work.length);
+  });
 });
