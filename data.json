@@ -17,7 +17,7 @@
       },
       {
         "name": "Testing",
-        "additionalInfo": "Mocha, Chai, JSDOM, Jest, Enzyme, Webdriver.io, Eslint, SASS lint",
+        "additionalInfo": "Mocha, Chai, JSDOM, Jest, Enzyme, Webdriver.io, linting",
         "level": "4.5"
       },
       {

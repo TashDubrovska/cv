@@ -6,19 +6,21 @@
     }
 
     &__name {
-        display: inline-block;
+        display: inline;
         font-size: 1rem;
         font-weight: 700;
-        margin: 0 $base-spacing $base-spacing 0;
+        margin: 0;
     }
 
     &__info {
-        display: inline-block;
+        display: inline;
+        line-height: 1.5;
     }
 
     &__level {
         background-color: $skill-background;
         height: $base-spacing*2;
+        margin-top: $base-spacing;
         position: relative;
         width: 100%;
 
