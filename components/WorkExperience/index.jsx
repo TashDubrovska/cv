@@ -5,7 +5,7 @@ import JobRole from '../JobRole';
 const WorkExperience = ({ roles }) => (
   <section>
     <h2>Work experience</h2>
-    <ul>
+    <ul className="work-experience">
       {roles.map((role, index) => (<JobRole
         key={index}
         company={role.company}

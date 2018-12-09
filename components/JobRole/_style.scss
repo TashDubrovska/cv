@@ -1,0 +1,35 @@
+.job-role {
+  margin-bottom: $base-spacing*9;
+
+  &__heading {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__company {
+      flex-basis: 100%;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0 0 $base-spacing;
+      order: 1;
+    }
+  
+    &__duration {
+      background-color: $highlighter-background;
+      color: $highlighter-text;
+      display: inline-block;
+      margin-bottom: $base-spacing*2;
+      margin-left: -$base-spacing*2 - 1;
+      order: 0;
+      padding: $base-spacing $base-spacing*2 $base-spacing $base-spacing*2 + 1px;
+    }
+  
+    &__role {
+      flex-basis: 100%;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: $base-spacing*4;
+      order: 2;
+      text-transform: uppercase;
+    }
+  }
+}

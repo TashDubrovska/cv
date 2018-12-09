@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import JobRole from '.';
 import data from '../../data.json';
 
-const baseClassName = 'job-experience__job-role';
+const baseClassName = 'job-role';
 
 describe('JobRole', () => {
   let jobRole;

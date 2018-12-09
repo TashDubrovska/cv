@@ -36,7 +36,7 @@
       },
       {
         "name": "Asset bundling",
-        "additionalInfo": "Webpack, Parcel, Babel",
+        "additionalInfo": "Gulp, NPM scripts, Webpack, Parcel, Babel",
         "level": "4.5"
       },
       {
@@ -69,7 +69,13 @@
   "work": [
     {
       "company": "Marks & Spencer",
-      "dates": "2016-2018",
+      "dates": "2016 - current",
+      "role": "Senior Software Developer",
+      "description": "Making cool stuff!"
+    },
+    {
+      "company": "John Lewis",
+      "dates": "2016 - 2018",
       "role": "Senior Software Developer",
       "description": "Making cool stuff!"
     }

@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const baseClassName = 'job-experience__job-role';
+const baseClassName = 'job-role';
 
 const JobRole = ({
   company, dates, role, description,
 }) => (
   <li className={baseClassName}>
-    <h3 className={`${baseClassName}__company`}>{company}</h3>
-    <h4>Duration</h4>
-    <p className={`${baseClassName}__duration`}>{dates}</p>
-    <h4>Role</h4>
-    <p className={`${baseClassName}__role`}>{role}</p>
-    <h4>Description</h4>
+    <div className={`${baseClassName}__heading`}>
+      <h3 className={`${baseClassName}__heading__company`}>{company}</h3>
+      <h4 className="hide-a11y">Role</h4>
+      <p className={`${baseClassName}__heading__role`}>{role}</p>
+      <h4 className="hide-a11y">Duration</h4>
+      <p className={`${baseClassName}__heading__duration`}>{dates}</p>
+    </div>
+    <h4 className="hide-a11y">Description</h4>
     <p className={`${baseClassName}__description`}>{description}</p>
   </li>
 );
