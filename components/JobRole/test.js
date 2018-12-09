@@ -19,15 +19,15 @@ describe('JobRole', () => {
   });
 
   test('should render company name', () => {
-    expect(jobRole.find(`.${baseClassName}__company`).text()).toEqual(jobRoleData.company);
+    expect(jobRole.find(`.${baseClassName}__heading__company`).text()).toEqual(jobRoleData.company);
   });
 
   test('should render dates', () => {
-    expect(jobRole.find(`.${baseClassName}__duration`).text()).toEqual(jobRoleData.dates);
+    expect(jobRole.find(`.${baseClassName}__heading__duration`).text()).toEqual(jobRoleData.dates);
   });
 
   test('should render role name', () => {
-    expect(jobRole.find(`.${baseClassName}__role`).text()).toEqual(jobRoleData.role);
+    expect(jobRole.find(`.${baseClassName}__heading__role`).text()).toEqual(jobRoleData.role);
   });
 
   test('should render role description', () => {
