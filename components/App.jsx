@@ -11,7 +11,7 @@ const App = ({ data }) => (
       surname={data.surname}
       whoiam={data.whoiam}
       aboutMe={data.aboutMe}
-      email={data.email}
+      contacts={data.contacts}
     />
     <Skills technical={data.skills.technical} personal={data.skills.personal} />
     <WorkExperience roles={data.work} />

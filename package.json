@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/TashDubrovska/cv#readme",
   "eslintConfig": {
-    "extends": ["airbnb", "plugin:jest/recommended"],
+    "extends": [
+      "airbnb",
+      "plugin:jest/recommended"
+    ],
     "parser": "babel-eslint",
     "env": {
       "browser": true,
@@ -31,8 +34,21 @@
     "rules": {
       "react/forbid-prop-types": false,
       "react/no-array-index-key": false,
-      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ],
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ]
     }
   },
   "eslintIgnore": [
@@ -73,10 +89,10 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "parcel-bundler": "^1.10.3",
-    "sass": "^1.15.1"
+    "sass": "^1.15.1",
+    "uninstall": "0.0.0"
   },
   "dependencies": {
-    "components": "^0.1.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",

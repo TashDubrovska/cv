@@ -15,7 +15,7 @@ describe('Header', () => {
         surname={data.surname}
         whoiam={data.whoiam}
         aboutMe={data.aboutMe}
-        email={data.email}
+        contacts={data.contacts}
       />,
     );
   });
@@ -27,8 +27,8 @@ describe('Header', () => {
     expect(nameElementText).toContain(data.surname);
   });
 
-  test('should render mailto link', () => {
-    expect(header.find('.email').prop('href')).toContain(data.email);
+  test('should render contacts', () => {
+    expect(header.find('Contacts')).toBeTruthy();
   });
 
   test('should render whoiam', () => {
