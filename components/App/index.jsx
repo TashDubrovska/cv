@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header';
-import Skills from './Skills';
-import WorkExperience from './WorkExperience';
+import Header from '../Header';
+import Skills from '../Skills';
+import WorkExperience from '../WorkExperience';
 
 const App = ({ data }) => (
   <div>
