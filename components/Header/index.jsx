@@ -4,26 +4,57 @@ import Contacts from '../Contacts';
 
 const baseClassName = 'header';
 
-const Header = ({
-  name, surname, whoiam, aboutMe, contacts,
-}) => (
-  <section className={baseClassName}>
-    <Contacts contacts={contacts} />
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
 
-    <h1 className={`${baseClassName}__name`}>
-      {name}
-      <span className={`${baseClassName}__name__highlight`}>{surname}</span>
-    </h1>
+    this.state = {
+      isReadMoreOpen: false,
+    };
 
-    <h2 className="hide-a11y">Who I am</h2>
-    <p className={`${baseClassName}__whoiam`}>{whoiam}</p>
+    this.readMoreClickHandler = this.readMoreClickHandler.bind(this);
+  }
 
-    <h2 className="hide-a11y">About me</h2>
-    {aboutMe.map((paragraph, index) => (
-      <p key={index} className={`${baseClassName}__about-me`}>{paragraph}</p>
-    ))}
-  </section>
-);
+  readMoreClickHandler() {
+    this.setState(prevState => ({
+      isReadMoreOpen: !prevState.isReadMoreOpen,
+    }));
+  }
+
+  render() {
+    const {
+      name, surname, whoiam, aboutMe, contacts,
+    } = this.props;
+    const { isReadMoreOpen } = this.state;
+    const readMoreContentId = 'read-more';
+
+    return (
+      <section className={baseClassName}>
+        <Contacts contacts={contacts} />
+
+        <h1 className={`${baseClassName}__name`}>
+          {name}
+          <span className={`${baseClassName}__name__highlight`}>{surname}</span>
+        </h1>
+
+        <h2 className="hide-a11y">Who I am</h2>
+        <p className={`${baseClassName}__whoiam`}>{whoiam}</p>
+
+        <h2 className="hide-a11y">About me</h2>
+        {<p className={`${baseClassName}__about-me`}>{aboutMe[0]}</p>}
+
+        <button type="button" className="read-more__trigger" aria-expanded={isReadMoreOpen} aria-controls={readMoreContentId} onClick={this.readMoreClickHandler}>
+          {`Read ${isReadMoreOpen ? 'less' : 'more'}`}
+        </button>
+        <div id={readMoreContentId} className={`read-more__content${isReadMoreOpen ? ' read-more__content--open' : ''}`}>
+          {aboutMe.slice(1).map((paragraph, index) => (
+            <p key={index} className={`${baseClassName}__about-me`}>{paragraph}</p>
+          ))}
+        </div>
+      </section>
+    );
+  }
+}
 
 Header.propTypes = {
   name: PropTypes.string.isRequired,

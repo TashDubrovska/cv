@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Header from '.';
 import data from '../../data.json';
+import { triggerAsyncId } from 'async_hooks';
 
 const baseClassName = 'header';
 
@@ -41,6 +42,102 @@ describe('Header', () => {
     expect(aboutMeElements).toHaveLength(data.aboutMe.length);
     aboutMeElements.forEach((element, index) => {
       expect(element.text()).toEqual(data.aboutMe[index]);
+    });
+  });
+
+  describe('read more', () => {
+    const readMoreBaseClass = 'read-more';
+    const triggerClass = `.${readMoreBaseClass}__trigger`;
+    const contentClass = `.${readMoreBaseClass}__content`;
+
+    describe('default collapsed state', () => {
+      let trigger;
+      let content;
+
+      beforeAll(() => {
+        trigger = header.find(triggerClass);
+        content = header.find(contentClass);
+      });
+
+      describe('trigger', () => {
+        test('should be programmatically associated with content', () => {
+          expect(trigger.prop('aria-controls')).toEqual(content.prop('id'));
+        });
+
+        test('should have aria-expanded set to false', () => {
+          expect(trigger.prop('aria-expanded')).toEqual(false);
+        });
+
+        test('should have correct text', () => {
+          expect(trigger.text()).toEqual('Read more');
+        });
+      });
+
+      describe('content', () => {
+        test('should not have open class', () => {
+          expect(header.find(contentClass).hasClass(`${readMoreBaseClass}__content--open`)).toBeFalsy();
+        });
+      });
+    });
+
+    describe('uncollapsed state on trigger activation', () => {
+      let trigger;
+      let content;
+
+      beforeAll(() => {
+        header.find(triggerClass).simulate('click');
+
+        trigger = header.find(triggerClass);
+        content = header.find(contentClass);
+      });
+
+      describe('trigger', () => {
+        test('should have aria-expanded set to true', () => {
+          expect(trigger.prop('aria-expanded')).toBeTruthy();
+        });
+
+        test('should have correct text', () => {
+          expect(trigger.text()).toEqual('Read less');
+        });
+      });
+
+      describe('content', () => {
+        test('should have open class', () => {
+          expect(content.prop('className')).toContain(`${readMoreBaseClass}__content--open`);
+        });
+      });
+    });
+
+    describe('collapsed state on repeated trigger activation', () => {
+      let trigger;
+      let content;
+
+      beforeAll(() => {
+        header.find(triggerClass).simulate('click');
+
+        trigger = header.find(triggerClass);
+        content = header.find(contentClass);
+      });
+
+      describe('trigger', () => {
+        test('should be programmatically associated with content', () => {
+          expect(trigger.prop('aria-controls')).toEqual(content.prop('id'));
+        });
+
+        test('should have aria-expanded set to false', () => {
+          expect(trigger.prop('aria-expanded')).toEqual(false);
+        });
+
+        test('should have correct text', () => {
+          expect(trigger.text()).toEqual('Read more');
+        });
+      });
+
+      describe('content', () => {
+        test('should not have open class', () => {
+          expect(header.find(contentClass).hasClass(`${readMoreBaseClass}__content--open`)).toBeFalsy();
+        });
+      });
     });
   });
 });
