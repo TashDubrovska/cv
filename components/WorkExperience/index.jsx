@@ -12,6 +12,7 @@ const WorkExperience = ({ roles }) => (
         dates={role.dates}
         role={role.role}
         description={role.description}
+        responsibilitiesAndProjects={role.responsibilitiesAndProjects}
       />
       ))}
     </ul>

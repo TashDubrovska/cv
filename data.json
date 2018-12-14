@@ -21,7 +21,7 @@
       },
       {
         "name": "Testing",
-        "additionalInfo": "Mocha, Chai, JSDOM, Jest, Enzyme, Webdriver.io, linting",
+        "additionalInfo": "Mocha, Chai, JSDOM, Jest, Enzyme, Webdriver.io, ESlint, SASS lint",
         "level": "4.5"
       },
       {
@@ -46,7 +46,7 @@
       },
       {
         "name": "Continious integration / deployment",
-        "additionalInfo": "Concourse, Pivotal, Bluemix, Azure, Docker, LogEntries",
+        "additionalInfo": "Concourse, Pivotal, Bluemix, Azure, Docker, Docker compose, LogEntries",
         "level": "4"
       }
     ],
@@ -71,11 +71,20 @@
       "company": "Marks & Spencer",
       "dates": "2016 - current",
       "role": "Senior Software Developer",
-      "description": "Making cool stuff!"
+      "description": "In this role I am a part of the internal framework team. We created a fully server-side rendered Node-based solution to accomodate the company's shift to DevOps model. This included both cloud hosting and libraries of reusable UI and server components.",
+      "responsibilitiesAndProjects": {
+        "description": "Due to constraints in resources, I temporarily share the responsibilities of the following roles with my manager",
+        "list": [
+          "scrum master",
+          "product owner",
+          "team lead",
+          "point of contact for support queries from external stakeholders"
+        ]
+      }
     },
     {
       "company": "John Lewis",
-      "dates": "2016 - 2018",
+      "dates": "2016 - 2018 (Contract - 4 renewals)",
       "role": "Senior Software Developer",
       "description": "Making cool stuff!"
     }
