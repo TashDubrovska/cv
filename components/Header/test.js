@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Header from '.';
 import data from '../../data.json';
-import { triggerAsyncId } from 'async_hooks';
 
 const baseClassName = 'header';
 
