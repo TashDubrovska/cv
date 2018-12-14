@@ -32,4 +32,35 @@
       text-transform: uppercase;
     }
   }
+
+  &__description {
+    margin-bottom: $base-spacing*3;
+  }
+
+  &__responsibilities-and-projects {
+    &__description {
+      margin-bottom: $base-spacing*2;
+
+      &:after {
+        content: ":";
+      }
+    }
+
+    &__list {
+      list-style: disc;
+      padding-left: $base-spacing*2;
+
+      &__item {
+        margin-bottom: $base-spacing;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        &:after {
+          content: ";";
+        }
+      }
+    }
+  }
 }

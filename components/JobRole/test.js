@@ -15,6 +15,7 @@ describe('JobRole', () => {
       dates={jobRoleData.dates}
       role={jobRoleData.role}
       description={jobRoleData.description}
+      responsibilitiesAndProjects={jobRoleData.responsibilitiesAndProjects}
     />);
   });
 
@@ -32,5 +33,24 @@ describe('JobRole', () => {
 
   test('should render role description', () => {
     expect(jobRole.find(`.${baseClassName}__description`).text()).toEqual(jobRoleData.description);
+  });
+
+  describe('Responsibilities and projects', () => {
+    test('should be rendered if responsibilitiesAndProjects is provided in data', () => {
+      expect(jobRole.find(`.${baseClassName}__responsibilities-and-projects`)).toBeTruthy();
+    });
+
+    test('should render description if it is provided', () => {
+      expect(jobRole.find(`.${baseClassName}__responsibilities-and-projects__description`).text()).toEqual(jobRoleData.responsibilitiesAndProjects.description);
+    });
+
+    test('should render list of responsibilities and projects', () => {
+      const listData = jobRoleData.responsibilitiesAndProjects.list;
+      const responsibilitiesAndProjects = jobRole.find(`.${baseClassName}__responsibilities-and-projects__list__item`);
+      expect(responsibilitiesAndProjects).toHaveLength(listData.length);
+      responsibilitiesAndProjects.forEach((responsibility, index) => {
+        expect(responsibility.text()).toEqual(listData[index]);
+      });
+    });
   });
 });
