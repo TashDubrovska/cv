@@ -13,10 +13,12 @@
 
     &__company {
       flex-basis: 100%;
-      font-size: 1rem;
-      font-weight: 400;
       margin: 0 0 $base-spacing;
       order: 1;
+
+      &__image {
+        height: 60px;
+      }
     }
   
     &__duration {

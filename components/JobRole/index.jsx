@@ -8,7 +8,9 @@ const JobRole = ({
 }) => (
   <li className={baseClassName}>
     <div className={`${baseClassName}__heading`}>
-      <h3 className={`${baseClassName}__heading__company`}>{company}</h3>
+      <h3 className={`${baseClassName}__heading__company`}>
+        <img className={`${baseClassName}__heading__company__image`} src={`./components/JobRole/images/${company.replace(/ /g, '')}.svg`} alt={company} />
+      </h3>
       <h4 className="hide-a11y">Role</h4>
       <p className={`${baseClassName}__heading__role`}>{role}</p>
 
