@@ -33,6 +33,10 @@ describe('Skill', () => {
     expect(skill.find(`.${baseClassName}__level__highlight`).prop('style').width).toContain(expectedWidth);
   });
 
+  test('should display correct level text', () => {
+    expect(skill.find(`.${baseClassName}__level__highlight`).text()).toEqual(`${skillData.level} of 5`);
+  });
+
   test('should render additional information', () => {
     expect(skill.find(`.${baseClassName}__info`).text()).toContain(skillData.additionalInfo);
   });
