@@ -17,10 +17,10 @@ const JobRole = ({
     </div>
     {
       description && (
-        <div>
+        <React.Fragment>
           <h4 className="hide-a11y">Description</h4>
           <p className={`${baseClassName}__description`}>{description}</p>
-        </div>
+        </React.Fragment>
       )
     }
 

@@ -5,7 +5,7 @@ import Skills from '../Skills';
 import WorkExperience from '../WorkExperience';
 
 const App = ({ data }) => (
-  <div>
+  <React.Fragment>
     <Header
       name={data.name}
       surname={data.surname}
@@ -15,7 +15,7 @@ const App = ({ data }) => (
     />
     <Skills skills={data.skills} />
     <WorkExperience roles={data.work} />
-  </div>
+  </React.Fragment>
 );
 
 App.propTypes = {
