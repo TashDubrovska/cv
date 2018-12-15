@@ -31,7 +31,7 @@ describe('JobRole', () => {
     expect(jobRole.find(`.${baseClassName}__heading__role`).text()).toEqual(jobRoleData.role);
   });
 
-  test('should render role description', () => {
+  test('should render role description if it is present', () => {
     expect(jobRole.find(`.${baseClassName}__description`).text()).toEqual(jobRoleData.description);
   });
 

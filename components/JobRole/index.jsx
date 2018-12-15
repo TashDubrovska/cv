@@ -15,8 +15,14 @@ const JobRole = ({
       <h4 className="hide-a11y">Duration</h4>
       <p className={`${baseClassName}__heading__duration`}>{dates}</p>
     </div>
-    <h4 className="hide-a11y">Description</h4>
-    <p className={`${baseClassName}__description`}>{description}</p>
+    {
+      description && (
+        <div>
+          <h4 className="hide-a11y">Description</h4>
+          <p className={`${baseClassName}__description`}>{description}</p>
+        </div>
+      )
+    }
 
     {
         responsibilitiesAndProjects && (
@@ -39,7 +45,7 @@ JobRole.propTypes = {
   company: PropTypes.string.isRequired,
   dates: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   responsibilitiesAndProjects: PropTypes.shape({
     description: PropTypes.string,
     list: PropTypes.array.isRequired,
@@ -47,6 +53,7 @@ JobRole.propTypes = {
 };
 
 JobRole.defaultProps = {
+  description: null,
   responsibilitiesAndProjects: null,
 };
 

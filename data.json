@@ -1,10 +1,10 @@
 {
   "name": "Nataliya",
   "surname": "Dubrovska",
-  "whoiam": "Web developer, Accessibility enthusiast",
+  "whoiam": "Fullstack web developer, Accessibility SME",
   "aboutMe": [
     "I am a hard working, pragmatic and highly motivated engineer with a keen interest in technology and all things web. One of my biggest passions is Accessibility as it strongly relates to my personal belief that the internet should be an incredible space for everyone.",
-    "Collaboration for me is one of the most important aspects of working as a part of a team or organization. I am a fast learner who enjoys challenging herself even if the challenge in question lays outside of my usual area of expertise. I love mentoring, deliver internal talks on both technical topics and soft skills as well as participate in joint projects or hackathons with my colleagues from various teams.",
+    "Collaboration for me is one of the most important aspects of working as a part of a team or organization. I am a fast learner who enjoys challenging herself outside of the usual comfort zone. I love mentoring, deliver internal talks on both technical topics and soft skills as well as participate in joint projects or hackathons with my colleagues from various teams.",
     "Outside of work, I am a cat lover, board and computer games geek who knows way too much about Star Wars."
   ],
   "contacts": {
@@ -69,11 +69,11 @@
   "work": [
     {
       "company": "Marks & Spencer",
-      "dates": "2016 - current",
+      "dates": "April 2017 - current",
       "role": "Senior Software Developer",
       "description": "In this role I am a part of the internal framework team. We created a fully server-side rendered Node-based solution to accomodate the company's shift to DevOps model. This included both cloud hosting and libraries of reusable UI and server components.",
       "responsibilitiesAndProjects": {
-        "description": "Due to constraints in resources, I temporarily share the responsibilities of the following roles with my manager",
+        "description": "Due to constraints in resources, at some points I was temporarily sharing the responsibilities of the following roles with my manager",
         "list": [
           "scrum master",
           "product owner",
@@ -84,9 +84,43 @@
     },
     {
       "company": "John Lewis",
-      "dates": "2016 - 2018 (Contract - 4 renewals)",
-      "role": "Senior Software Developer",
-      "description": "Making cool stuff!"
+      "dates": "August 2015 - March 2017 (Contract - 4 renewals)",
+      "role": "Senior Front-End Engineer",
+      "description": "My main focus in this role was to act as a front-end lead for a number of transformation projects and provide onboarding for new hires.",
+      "responsibilitiesAndProjects": {
+        "description": "I was a member of the following product-based Agile teams, working on",
+        "list": [
+          "making checkout fully responsive on a tight timescale",
+          "replatforming of website and creation of internal pattern library",
+          "creating a new data driven solution for content driven pages",
+          "building front-end portion for the complete overhaul of contact center apps"
+        ]
+      }
+    },
+    {
+      "company": "Apple",
+      "dates": "March 2015 - April 2015 (Contract - 2 renewals)",
+      "role": "Front-End Developer",
+      "description": "Contracted on Apple Consultants Network redesign project."
+    },
+    {
+      "company": "Apple",
+      "dates": "October 2013 - February 2015",
+      "role": "Accessibility Enginner & SME",
+      "responsibilitiesAndProjects": {
+        "description": "As a member of Accessibility & SEO Center of Excellence I was responsible for",
+        "list": [
+          "auditing and advising new projects during their whole duration",
+          "producing internal training resources",
+          "promoting awareness of accessibility around the company"
+        ]
+      }
+    },
+    {
+      "company": "Apple",
+      "dates": "October 2013 - February 2015",
+      "role": "Graduate Front-End Engineer",
+      "description": "As a front-end engineer for the online store, I participated in various day to day activities and projects handled within EMEA region. In addition, I worked as a part of the content publishing team, providing them with the technical support needed to deliver frequent updates across 20+ countries in more than 10 different languages."
     }
   ]
 }
