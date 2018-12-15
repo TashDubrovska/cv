@@ -12,9 +12,9 @@ const Skills = ({ skills }) => (
         <h3 className={`${baseClassName}__subsection__heading`}>{skillGroup}</h3>
         <ul className={`${baseClassName}__subsection__list`}>
           {
-            skills[skillGroup].map((skill, index) => (
+            skills[skillGroup].map((skill, i) => (
               <Skill
-                key={index}
+                key={i}
                 name={skill.name}
                 additionalInfo={skill.additionalInfo}
                 level={skill.level}
