@@ -14,13 +14,14 @@
     }
   
     &__duration {
-      background-color: $highlighter-background;
+      box-shadow: inset 1000px 1000px 0 0 $highlighter-background;
       color: $highlighter-text;
       display: inline-block;
       margin-bottom: $base-spacing*2;
       margin-left: -$base-spacing*2 - 1;
       order: 0;
       padding: $base-spacing $base-spacing*2 $base-spacing $base-spacing*2 + 1px;
+      -webkit-print-color-adjust: exact;
     }
   
     &__role {
