@@ -1,7 +1,7 @@
 @import "../Skill/style";
 
 .skills {
-    @media screen and (min-width: $tablet-portrait) {
+    @media screen and (min-width: $tablet-portrait), print {
        display: flex;
        flex-wrap: wrap; 
     }
@@ -9,7 +9,7 @@
     &__heading {
         margin-bottom: $base-spacing*3;
 
-        @media screen and (min-width: $tablet-portrait) {
+        @media screen and (min-width: $tablet-portrait), print {
             flex-basis: 100%;
         }
     }
@@ -19,7 +19,7 @@
             margin-bottom: $base-spacing*6;
         }
 
-        @media screen and (min-width: $tablet-portrait) {
+        @media screen and (min-width: $tablet-portrait), print {
             flex-basis: 48%;
 
             &:first-of-type {
