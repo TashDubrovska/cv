@@ -8,8 +8,14 @@
     "Outside of work, I am a cat lover, board and computer games geek who knows way too much about Star Wars."
   ],
   "contacts": {
-    "email": "mailto:n.dubrovska89@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/nataliya-dubrovska-02b2078b/"
+    "email": {
+      "printText": "n.dubrovska89@gmail.com",
+      "link": "mailto:n.dubrovska89@gmail.com"
+    },
+    "linkedin": {
+      "printText": "Nataliya Dubrovska",
+      "link": "https://www.linkedin.com/in/nataliya-dubrovska-02b2078b/"
+    }
   },
   "email": "n.dubrovska89@gmail.com",
   "skills": {
