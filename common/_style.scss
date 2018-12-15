@@ -31,6 +31,10 @@ main {
 section {
     margin-bottom: $base-spacing*8;
 
+    @media print {
+        margin-bottom: $base-spacing*3;
+    }
+
     &:last-of-type {
         margin-bottom: 0;
     }
