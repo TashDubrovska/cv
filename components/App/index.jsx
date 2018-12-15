@@ -13,7 +13,7 @@ const App = ({ data }) => (
       aboutMe={data.aboutMe}
       contacts={data.contacts}
     />
-    <Skills technical={data.skills.technical} personal={data.skills.personal} />
+    <Skills skills={data.skills} />
     <WorkExperience roles={data.work} />
   </div>
 );

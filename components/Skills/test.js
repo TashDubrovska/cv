@@ -7,7 +7,7 @@ describe('Skills', () => {
   let skills;
 
   beforeAll(() => {
-    skills = shallow(<Skills technical={data.skills.technical} personal={data.skills.personal} />);
+    skills = shallow(<Skills skills={data.skills} />);
   });
 
   test('should render correct number of technical skills', () => {
