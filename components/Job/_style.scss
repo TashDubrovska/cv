@@ -40,17 +40,16 @@
       &:before {
         content: "";
         background-color: $work-timeline-marker-colour;
-        border-radius: 50%;
         box-shadow: inset 1000px 1000px 0 0 $work-timeline-marker-colour;
         display: block;
         width: $base-spacing;
         height: $base-spacing;
-        left: -($base-spacing + $base-spacing/2 + 1px);
+        left: -($base-spacing + $base-spacing/2 + 0.5px);
         position: absolute;
         top: 0;
 
         @media screen and (min-width: $mobile-landscape) {
-          left: -($base-spacing*2 + $base-spacing/2 + 1px);
+          left: -($base-spacing*2 + $base-spacing/2 + 0.5px);
         }
       }
   
