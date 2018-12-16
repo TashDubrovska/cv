@@ -1,77 +1,93 @@
-.job-role {
-  border-left: 1px solid $highlighter-background;
+.job {
   margin-bottom: $base-spacing*9;
-  padding-left: $base-spacing;
 
   @media screen and (min-width: $mobile-landscape) {
-    padding-left: $base-spacing*2;
+    display: flex;
   }
 
-  &__heading {
-    display: flex;
-    flex-wrap: wrap;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-    &__company {
-      flex-basis: 100%;
-      margin: 0 0 $base-spacing;
-      order: 1;
+  &__company {
+    margin: 0 $base-spacing*2 $base-spacing*2 0;
 
-      &__image {
-        height: 60px;
-      }
-    }
-  
-    &__duration {
-      box-shadow: inset 1000px 1000px 0 0 $highlighter-background;
-      color: $highlighter-text;
-      display: inline-block;
-      margin-bottom: $base-spacing*2;
-      margin-left: -$base-spacing - 1;
-      order: 0;
-      padding: $base-spacing $base-spacing*2 $base-spacing $base-spacing*2 + 1px;
-      -webkit-print-color-adjust: exact;
+    &__image {
+      width: 70px;
 
       @media screen and (min-width: $mobile-landscape) {
-        margin-left: -$base-spacing*2 - 1;
+        width: 60px;
       }
-    }
-  
-    &__role {
-      flex-basis: 100%;
-      font-size: 1.36rem;
-      font-weight: 700;
-      margin-bottom: $base-spacing*4;
-      order: 2;
-      text-transform: uppercase;
     }
   }
 
-  &__description {
-    margin-bottom: $base-spacing*3;
-  }
+  &__roles {
+    border-left: 1px solid $work-timeline-border-colour;
+    padding-left: $base-spacing;
 
-  &__responsibilities-and-projects {
-    &__description {
-      margin-bottom: $base-spacing*2;
-
-      &:after {
-        content: ":";
-      }
-    }
-
-    &__list {
-      list-style: disc;
+    @media screen and (min-width: $mobile-landscape) {
       padding-left: $base-spacing*2;
+    }
 
-      &__item {
-        margin-bottom: $base-spacing;
+    &__role {
+      margin-bottom: $base-spacing*6;
+      position: relative;
 
-        &:last-of-type {
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &:before {
+        content: "";
+        background-color: $work-timeline-marker-colour;
+        border-radius: 50%;
+        box-shadow: inset 1000px 1000px 0 0 $work-timeline-marker-colour;
+        display: block;
+        width: $base-spacing;
+        height: $base-spacing;
+        left: -($base-spacing + $base-spacing/2 + 1px);
+        position: absolute;
+        top: 0;
+
+        @media screen and (min-width: $mobile-landscape) {
+          left: -($base-spacing*2 + $base-spacing/2 + 1px);
+        }
+      }
+  
+      &__name {
+        font-size: 1.17rem;
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        top: -0.5em;
+      }
+
+      &__duration {
+        font-size: 0.75rem;
+        margin-bottom: $base-spacing*4;
+        text-transform: uppercase;
+      }
+
+      &__description {
+        margin-bottom: $base-spacing*3;
+
+        &:last-child {
           margin-bottom: 0;
         }
+      }
 
-        &:after {
-          content: ";";
+      &__responsibilities-and-projects {
+        &__description {
+          margin-bottom: $base-spacing*2;
+        }
+
+        &__list {
+          list-style: disc;
+          padding-left: $base-spacing*2;
+
+          &__item {
+            margin-bottom: $base-spacing;
+          }
         }
       }
     }

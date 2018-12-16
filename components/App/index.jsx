@@ -14,7 +14,7 @@ const App = ({ data }) => (
       contacts={data.contacts}
     />
     <Skills skills={data.skills} />
-    <WorkExperience roles={data.work} />
+    <WorkExperience work={data.work} />
   </React.Fragment>
 );
 

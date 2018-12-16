@@ -22,7 +22,7 @@ Skill.propTypes = {
 };
 
 Skill.defaultProps = {
-  additionalInfo: [],
+  additionalInfo: '',
 };
 
 export default Skill;

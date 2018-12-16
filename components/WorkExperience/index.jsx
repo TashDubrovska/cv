@@ -2,17 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import JobRole from '../JobRole';
 
-const WorkExperience = ({ roles }) => (
+const WorkExperience = ({ work }) => (
   <section>
     <h2>Work experience</h2>
     <ul className="work-experience">
-      {roles.map((role, index) => (<JobRole
+      {work.map(({ company, roles }, index) => (<JobRole
         key={index}
-        company={role.company}
-        dates={role.dates}
-        role={role.role}
-        description={role.description}
-        responsibilitiesAndProjects={role.responsibilitiesAndProjects}
+        company={company}
+        roles={roles}
       />
       ))}
     </ul>
@@ -20,7 +17,7 @@ const WorkExperience = ({ roles }) => (
 );
 
 WorkExperience.propTypes = {
-  roles: PropTypes.array.isRequired,
+  work: PropTypes.array.isRequired,
 };
 
 export default WorkExperience;

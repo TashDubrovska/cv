@@ -1,62 +1,65 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const baseClassName = 'job-role';
+const baseClassName = 'job';
 
 const JobRole = ({
-  company, dates, role, description, responsibilitiesAndProjects,
+  company, roles,
 }) => (
   <li className={baseClassName}>
-    <div className={`${baseClassName}__heading`}>
-      <h3 className={`${baseClassName}__heading__company`}>
-        <img className={`${baseClassName}__heading__company__image`} src={`./components/JobRole/images/${company.replace(/ /g, '')}.svg`} alt={company} />
-      </h3>
-      <h4 className="hide-a11y">Role</h4>
-      <p className={`${baseClassName}__heading__role`}>{role}</p>
+    <h3 className={`${baseClassName}__company`}>
+      <img className={`${baseClassName}__company__image`} src={`./components/JobRole/images/${company.replace(/ /g, '')}.svg`} alt={company} />
+    </h3>
+    <ul className={`${baseClassName}__roles`}>
+      {roles.map(({
+        name, dates, description, responsibilitiesAndProjects,
+      }, index) => (
+        <li key={index} className={`${baseClassName}__roles__role`}>
+          <h4 className="hide-a11y">Role</h4>
+          <p className={`${baseClassName}__roles__role__name`}>{name}</p>
 
-      <h4 className="hide-a11y">Duration</h4>
-      <p className={`${baseClassName}__heading__duration`}>{dates}</p>
-    </div>
-    {
-      description && (
-        <React.Fragment>
-          <h4 className="hide-a11y">Description</h4>
-          <p className={`${baseClassName}__description`}>{description}</p>
-        </React.Fragment>
-      )
-    }
+          <h5 className="hide-a11y">Duration</h5>
+          <p className={`${baseClassName}__roles__role__duration`}>{dates}</p>
 
-    {
-        responsibilitiesAndProjects && (
-          <div className={`${baseClassName}__responsibilities-and-projects`}>
-            <h4 className="hide-a11y">Role responsibilities and projects</h4>
-            {responsibilitiesAndProjects.description
-              && <p className={`${baseClassName}__responsibilities-and-projects__description`}>{responsibilitiesAndProjects.description}</p>}
-            <ul className={`${baseClassName}__responsibilities-and-projects__list`}>
-              {responsibilitiesAndProjects.list.map((item, index) => (
-                <li key={index} className={`${baseClassName}__responsibilities-and-projects__list__item`}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        )
-    }
+          {
+            description && (
+              <React.Fragment>
+                <h5 className="hide-a11y">Description</h5>
+                <p className={`${baseClassName}__roles__role__description`}>{description}</p>
+              </React.Fragment>
+            )
+          }
+
+          {
+            responsibilitiesAndProjects && (
+              <div className={`${baseClassName}__roles__role__responsibilities-and-projects`}>
+                <h4 className="hide-a11y">Role responsibilities and projects</h4>
+                {responsibilitiesAndProjects.description
+                  && <p className={`${baseClassName}__roles__role__responsibilities-and-projects__description`}>{responsibilitiesAndProjects.description}</p>}
+                <ul className={`${baseClassName}__roles__role__responsibilities-and-projects__list`}>
+                  {responsibilitiesAndProjects.list.map((item, i) => (
+                    <li key={i} className={`${baseClassName}__roles__role__responsibilities-and-projects__list__item`}>{item}</li>
+                  ))}
+                </ul>
+              </div>)
+          }
+        </li>
+      ))}
+    </ul>
   </li>
 );
 
 JobRole.propTypes = {
   company: PropTypes.string.isRequired,
-  dates: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  responsibilitiesAndProjects: PropTypes.shape({
+  roles: PropTypes.arrayOf(PropTypes.shape({
+    dates: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     description: PropTypes.string,
-    list: PropTypes.array.isRequired,
-  }),
-};
-
-JobRole.defaultProps = {
-  description: null,
-  responsibilitiesAndProjects: null,
+    responsibilitiesAndProjects: PropTypes.shape({
+      description: PropTypes.string,
+      list: PropTypes.array.isRequired,
+    }),
+  })).isRequired,
 };
 
 export default JobRole;

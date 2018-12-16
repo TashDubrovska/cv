@@ -7,7 +7,7 @@ describe('WorkExperience', () => {
   let workExperience;
 
   beforeAll(() => {
-    workExperience = shallow(<WorkExperience roles={data.work} />);
+    workExperience = shallow(<WorkExperience work={data.work} />);
   });
 
   test('should render correct number of roles', () => {
