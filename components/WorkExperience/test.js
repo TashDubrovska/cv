@@ -11,6 +11,6 @@ describe('WorkExperience', () => {
   });
 
   test('should render correct number of roles', () => {
-    expect(workExperience.find('JobRole')).toHaveLength(data.work.length);
+    expect(workExperience.find('Job')).toHaveLength(data.work.length);
   });
 });

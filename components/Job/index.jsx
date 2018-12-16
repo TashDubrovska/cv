@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const baseClassName = 'job';
 
-const JobRole = ({
+const Job = ({
   company, roles,
 }) => (
   <li className={baseClassName}>
     <h3 className={`${baseClassName}__company`}>
-      <img className={`${baseClassName}__company__image`} src={`./components/JobRole/images/${company.replace(/ /g, '')}.svg`} alt={company} />
+      <img className={`${baseClassName}__company__image`} src={`./components/Job/images/${company.replace(/ /g, '')}.svg`} alt={company} />
     </h3>
     <ul className={`${baseClassName}__roles`}>
       {roles.map(({
@@ -49,7 +49,7 @@ const JobRole = ({
   </li>
 );
 
-JobRole.propTypes = {
+Job.propTypes = {
   company: PropTypes.string.isRequired,
   roles: PropTypes.arrayOf(PropTypes.shape({
     dates: PropTypes.string.isRequired,
@@ -62,4 +62,4 @@ JobRole.propTypes = {
   })).isRequired,
 };
 
-export default JobRole;
+export default Job;

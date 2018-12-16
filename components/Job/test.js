@@ -1,17 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import JobRole from '.';
+import Job from '.';
 import data from '../../data.json';
 
 const baseClassName = 'job';
 
-describe('JobRole', () => {
+describe('Job', () => {
   let jobRole;
   const jobData = data.work[0];
   const roleData = jobData.roles[0];
 
   beforeAll(() => {
-    jobRole = shallow(<JobRole
+    jobRole = shallow(<Job
       company={jobData.company}
       roles={jobData.roles}
     />);
@@ -19,6 +19,12 @@ describe('JobRole', () => {
 
   test('should render company name', () => {
     expect(jobRole.find(`.${baseClassName}__company__image`).prop('alt')).toEqual(jobData.company);
+  });
+
+  test('should render correct path to company icon', () => {
+    const expectedImagePath = `./components/Job/images/${jobData.company.replace(/ /g, '')}.svg`;
+
+    expect(jobRole.find(`.${baseClassName}__company__image`).prop('src')).toEqual(expectedImagePath);
   });
 
   test('should render dates', () => {
