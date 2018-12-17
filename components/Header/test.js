@@ -40,7 +40,7 @@ describe('Header', () => {
 
     expect(aboutMeElements).toHaveLength(data.aboutMe.length);
     aboutMeElements.forEach((element, index) => {
-      expect(element.text()).toEqual(data.aboutMe[index]);
+      expect(element.html()).toContain(data.aboutMe[index]);
     });
   });
 

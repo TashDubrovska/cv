@@ -1,11 +1,12 @@
 {
   "name": "Nataliya",
   "surname": "Dubrovska",
-  "whoiam": "Fullstack web developer, Accessibility SME",
+  "whoiam": "Fullstack web developer, Accessibility Specialist",
   "aboutMe": [
-    "I am a hard working, pragmatic and highly motivated engineer with a keen interest in technology and all things web. One of my biggest passions is Accessibility as it strongly relates to my personal belief that the internet should be an incredible space for everyone.",
-    "Collaboration for me is one of the most important aspects of working as a part of a team or organization. I am a fast learner who enjoys challenging herself outside of the usual comfort zone. I love mentoring, deliver internal talks on both technical topics and soft skills as well as participate in joint projects or hackathons with my colleagues from various teams.",
-    "Outside of work, I am a cat lover, board and computer games geek who knows way too much about Star Wars."
+    "I am a <strong>hard working</strong>, <strong>pragmatic</strong> and <strong>highly motivated</strong> engineer with a keen interest in technology and all things web. One of my biggest passions is Accessibility as it strongly relates to my personal belief that the internet should be an incredible space for everyone.",
+    "<strong>Collaboration</strong> for me is one of the most important aspects of working with a team or organization. I am a <strong>fast learner</strong> who enjoys challenging herself outside of the usual comfort zone. I love mentoring, deliver internal talks on both technical topics and soft skills and <strong>participate in joint projects or hackathons</strong> with my colleagues from various teams.",
+    "In addition to helping with community building inside my current place of work, I <strong>volunteer</strong> as a lead instructor for <strong>Code First: Girls</strong>. Recently I also got my first experience <strong>speaking externally</strong> by running a free workshop during OWASP conference.",
+    "Outside of work, I am a cat lover, board and computer games geek, who knows way too much about Star Wars."
   ],
   "contacts": {
     "email": {

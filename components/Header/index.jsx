@@ -41,14 +41,14 @@ class Header extends React.Component {
         <p className={`${baseClassName}__whoiam`}>{whoiam}</p>
 
         <h2 className="hide-a11y">About me</h2>
-        {<p className={`${baseClassName}__about-me`}>{aboutMe[0]}</p>}
+        {<p className={`${baseClassName}__about-me`} dangerouslySetInnerHTML={{ __html: aboutMe[0] }} />}
 
         <button type="button" className="read-more__trigger" aria-expanded={isReadMoreOpen} aria-controls={readMoreContentId} onClick={this.readMoreClickHandler}>
           {`Read ${isReadMoreOpen ? 'less' : 'more'}`}
         </button>
         <div id={readMoreContentId} className={`read-more__content${isReadMoreOpen ? ' read-more__content--open' : ''}`}>
           {aboutMe.slice(1).map((paragraph, index) => (
-            <p key={index} className={`${baseClassName}__about-me`}>{paragraph}</p>
+            <p key={index} className={`${baseClassName}__about-me`} dangerouslySetInnerHTML={{ __html: paragraph }} />
           ))}
         </div>
       </section>
