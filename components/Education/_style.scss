@@ -1,0 +1,20 @@
+.education {
+  &__institutions {
+    &__institution {
+      margin-bottom: $base-spacing*5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &__name {
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      &__dates {
+        margin-bottom: $base-spacing*2;
+      }
+    }
+  }
+}

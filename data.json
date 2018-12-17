@@ -143,5 +143,23 @@
         }
       ]
     }
+  ],
+  "education": [
+    {
+      "name": "Imperial College London",
+      "dates": "2009 - 2011",
+      "diplomas": [
+        "Bachelors of Engineering, Computing"
+      ]
+    },
+    {
+      "name": "Filton College (Bristol)",
+      "dates": "2007 - 2009",
+      "diplomas": [
+        "A-levels in: Maths, Further Maths and Physics",
+        "AS-levels in: IT and Russian",
+        "BTEC National Diploma for IT practitioners"
+      ]
+    }
   ]
 }

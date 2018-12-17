@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../Header';
 import Skills from '../Skills';
 import WorkExperience from '../WorkExperience';
+import Education from '../Education';
 
 const App = ({ data }) => (
   <React.Fragment>
@@ -15,6 +16,7 @@ const App = ({ data }) => (
     />
     <Skills skills={data.skills} />
     <WorkExperience work={data.work} />
+    <Education education={data.education} />
   </React.Fragment>
 );
 
