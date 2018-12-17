@@ -22,7 +22,7 @@
   }
 
   &__roles {
-    border-left: 1px solid $work-timeline-border-colour;
+    border-left: 2px solid $work-timeline-border-colour;
     padding-left: $base-spacing;
 
     @media screen and (min-width: $mobile-landscape) {
@@ -44,12 +44,12 @@
         display: block;
         width: $base-spacing;
         height: $base-spacing;
-        left: -($base-spacing + $base-spacing/2 + 0.5px);
+        left: -($base-spacing + $base-spacing/2 + 1px);
         position: absolute;
         top: 0;
 
         @media screen and (min-width: $mobile-landscape) {
-          left: -($base-spacing*2 + $base-spacing/2 + 0.5px);
+          left: -($base-spacing*2 + $base-spacing/2 + 1px);
         }
       }
   
