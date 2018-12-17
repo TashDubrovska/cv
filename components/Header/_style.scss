@@ -65,7 +65,7 @@
   &__content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height .9s ease-out;
+    transition: max-height .7s ease-out;
 
     @media screen and (min-width: $tablet-portrait), print {
       max-height: 1200px;
@@ -73,7 +73,7 @@
 
     &--open {
       max-height: 1000px;
-      transition: max-height .9s ease-in;
+      transition: max-height .7s ease-in;
     }
   }
 }

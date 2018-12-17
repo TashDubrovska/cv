@@ -13,6 +13,22 @@ class Header extends React.Component {
     };
 
     this.readMoreClickHandler = this.readMoreClickHandler.bind(this);
+    this.updateIsReadMoreOpen = this.updateIsReadMoreOpen.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateIsReadMoreOpen();
+    window.addEventListener('resize', this.updateIsReadMoreOpen);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateIsReadMoreOpen);
+  }
+
+  updateIsReadMoreOpen() {
+    this.setState(() => ({
+      isReadMoreOpen: window.innerWidth >= 768,
+    }));
   }
 
   readMoreClickHandler() {
@@ -46,7 +62,7 @@ class Header extends React.Component {
         <button type="button" className="read-more__trigger" aria-expanded={isReadMoreOpen} aria-controls={readMoreContentId} onClick={this.readMoreClickHandler}>
           {`Read ${isReadMoreOpen ? 'less' : 'more'}`}
         </button>
-        <div id={readMoreContentId} className={`read-more__content${isReadMoreOpen ? ' read-more__content--open' : ''}`}>
+        <div id={readMoreContentId} className={`read-more__content${isReadMoreOpen ? ' read-more__content--open' : ''}`} aria-hidden={!isReadMoreOpen}>
           {aboutMe.slice(1).map((paragraph, index) => (
             <p key={index} className={`${baseClassName}__about-me`} dangerouslySetInnerHTML={{ __html: paragraph }} />
           ))}
