@@ -14,8 +14,8 @@ const App = ({ data }) => (
       aboutMe={data.aboutMe}
       contacts={data.contacts}
     />
-    <Skills skills={data.skills} />
     <WorkExperience work={data.work} />
+    <Skills skills={data.skills} />
     <Education education={data.education} />
   </React.Fragment>
 );
