@@ -17,6 +17,10 @@
     &__subsection {
         &:first-of-type {
             margin-bottom: $base-spacing*6;
+
+            @media screen and (min-width: $tablet-portrait) {
+                margin-bottom: 0;
+            }
         }
 
         @media screen and (min-width: $tablet-portrait), print {
