@@ -1,4 +1,5 @@
 @import '../Contacts/style';
+
 .header {
   &__name {
     font-size: 2.8rem;
@@ -11,9 +12,9 @@
     }
 
     @media screen and (min-width: $tablet-landscape) {
-      border-left: $base-spacing*4 solid $highlighter-background;
+      border-left: $base-spacing * 4 solid $highlighter-background;
       font-size: 7rem;
-      padding-left: $base-spacing*5;
+      padding-left: $base-spacing * 5;
     }
 
     &__highlight {
@@ -26,18 +27,18 @@
   &__whoiam {
     font-size: 1rem;
     font-weight: 700;
-    margin-bottom: $base-spacing*5;
+    margin-bottom: $base-spacing * 5;
     text-transform: uppercase;
 
     @media screen and (min-width: $tablet-landscape) {
       font-size: 1.5rem;
-      margin-bottom: $base-spacing*9;
+      margin-bottom: $base-spacing * 9;
     }
   }
 
   &__about-me {
     line-height: 1.5;
-    margin: 0 0 $base-spacing*2;
+    margin: 0 0 $base-spacing * 2;
   }
 }
 
@@ -45,19 +46,19 @@
   &__trigger {
     background: none;
     border: 0;
-    margin-bottom: $base-spacing*3;
+    margin-bottom: $base-spacing * 3;
     padding: 0;
 
     @media screen and (min-width: $tablet-portrait), print {
       display: none;
     }
 
-    &:after {
-      content: "";
+    &::after {
       background-color: $text-highlight;
+      content: '';
       display: block;
       height: 3px;
-      margin-top: $base-spacing/4;
+      margin-top: $base-spacing / 4;
       width: 100%;
     }
   }
