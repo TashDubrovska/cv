@@ -13,7 +13,10 @@
       }
 
       &__dates {
+        font-size: 0.75rem;
+        font-weight: 700;
         margin-bottom: $base-spacing*2;
+        text-transform: uppercase;
       }
     }
   }
