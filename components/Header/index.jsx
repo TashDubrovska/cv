@@ -26,8 +26,8 @@ class Header extends React.Component {
   }
 
   updateIsReadMoreOpen() {
-    this.setState(() => ({
-      isReadMoreOpen: window.innerWidth >= 768,
+    this.setState(prevState => ({
+      isReadMoreOpen: prevState.isReadMoreOpen || window.innerWidth >= 768,
     }));
   }
 
