@@ -1,6 +1,8 @@
 const cacheName = 'nd-cv-v1';
 const filesToCache = [
   '/cv',
+  '/cv/',
+  '/cv/service-worker.js',
   '/cv/index.html',
   '/cv/assets/index.js',
   '/cv/assets/style.css',
