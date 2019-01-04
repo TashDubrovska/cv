@@ -3,6 +3,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/cv/service-worker.js')
+                .then(() => console.log('Service worker is registered'));
+        }
+    </script>
     <link rel="shortcut icon" type="image/x-icon" href="./common/images/favicon.ico" />
     <title>Nataliya Dubrovska - CV</title>
     <link rel="stylesheet" href="assets/style.css">
