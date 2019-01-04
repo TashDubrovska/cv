@@ -1,4 +1,4 @@
-const cacheName = 'nd-cv-v1';
+const cacheName = 'nd-cv-v2';
 const filesToCache = [
   '/cv',
   '/cv/',
