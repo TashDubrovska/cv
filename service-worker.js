@@ -1,14 +1,14 @@
 const cacheName = 'nd-cv-v1';
 const filesToCache = [
-  '/',
-  '/index.html',
-  '/assets/index.js',
-  '/assets/style.css',
-  '/components/Contacts/images/email.svg',
-  '/components/Contacts/images/linkedin.svg',
-  '/components/Job/images/Apple.svg',
-  '/components/Job/images/JohnLewis.svg',
-  '/components/Job/images/Marks&Spencer.svg',
+  '/cv',
+  '/cv/index.html',
+  '/cv/assets/index.js',
+  '/cv/assets/style.css',
+  '/cv/components/Contacts/images/email.svg',
+  '/cv/components/Contacts/images/linkedin.svg',
+  '/cv/components/Job/images/Apple.svg',
+  '/cv/components/Job/images/JohnLewis.svg',
+  '/cv/components/Job/images/Marks&Spencer.svg',
 ];
 
 self.addEventListener('install', (event) => {
