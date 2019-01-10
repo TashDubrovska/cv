@@ -15,7 +15,7 @@ describe('Footer', () => {
   test('should render link to github', () => {
     const gitLinkElement = footer.find(`.${baseClassName}__git`);
 
-    expect(gitLinkElement.text).toEqual('The code for this CV is available on GitHub');
-    expect(gitLinkElement.this.prop('href')).toEqual(data.footer.gitLink);
+    expect(gitLinkElement.text()).toEqual('The code for this CV is available on GitHub');
+    expect(gitLinkElement.prop('href')).toEqual(data.footer.gitLink);
   });
 });

@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Header from '.';
 import data from '../../data.json';
+import setWindowDimentions from '../../utilities/setWindowDimentions';
 
 const baseClassName = 'header';
 
@@ -9,6 +10,7 @@ describe('Header', () => {
   let header;
 
   beforeAll(() => {
+    setWindowDimentions(767, 1024);
     header = shallow(
       <Header
         name={data.name}

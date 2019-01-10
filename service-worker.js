@@ -12,7 +12,7 @@ const filesToCache = [
   '/cv/components/Job/images/Marks&Spencer.svg',
 ];
 
-self.addEventListener('install', (event) => {
+self.addEventListener('install', (event) => { // eslint-disable-line no-restricted-globals
   console.log('Service worker is installing');
   event.waitUntil(
     caches.open(cacheName).then((cache) => {
@@ -22,7 +22,7 @@ self.addEventListener('install', (event) => {
   );
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', (event) => { // eslint-disable-line no-restricted-globals
   console.log('Service worker is activating');
 
   event.waitUntil(
@@ -37,7 +37,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', (event) => { // eslint-disable-line no-restricted-globals
   console.log('Service worker intercepted a fetch');
 
   event.respondWith(
