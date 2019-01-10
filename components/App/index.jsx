@@ -4,6 +4,7 @@ import Header from '../Header';
 import Skills from '../Skills';
 import WorkExperience from '../WorkExperience';
 import Education from '../Education';
+import Footer from '../Footer';
 
 const App = ({ data }) => (
   <React.Fragment>
@@ -17,6 +18,7 @@ const App = ({ data }) => (
     <WorkExperience work={data.work} />
     <Skills skills={data.skills} />
     <Education education={data.education} />
+    <Footer gitLink={data.footer.gitLink} />
   </React.Fragment>
 );
 

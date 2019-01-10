@@ -166,5 +166,8 @@
         "BTEC National Diploma for IT practitioners"
       ]
     }
-  ]
+  ],
+  "footer": {
+    "gitLink": "https://github.com/TashDubrovska/cv"
+  }
 }
