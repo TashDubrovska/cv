@@ -27,3 +27,15 @@ To ensure code consistency linting was introduced. It uses AirBnb setup with min
 ```
 npm run lint
 ```
+
+## TODO
+- fetch data rather than bundling it in and improve caching;
+- split out Header component into multiple components;
+- slit out Job component into multiple components;
+- improve testing for Read more functionality;
+- change testing to look at the full `data.json`;
+- add Express server;
+- add dev script with autorefresh;
+- add server side rendering for appropriate parts;
+- host in AWS;
+- improve how styling is imported (potentially via `js` imports);
